@@ -1,11 +1,11 @@
 # Setup
 title: Seohyeon Park
-description: 
+description: Hello!
 url: https://eainx.github.io
 avatar: /profile.jpg
 paginate: 5
 permalink: pretty
-cover_image: /cat.jpeg
+cover_image: 
 
 # Gems
 plugins:
@@ -53,9 +53,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Seohyeon Park
+  url: https://github.com/eainx/
+  email: seohyun423@korea.ac.kr
   
 plugins:
   - jekyll-remote-theme
