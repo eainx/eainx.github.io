@@ -1,7 +1,8 @@
 # Setup
 title: Seohyeon Park
-description: Hello! I'm an undergraduate intern at the Media Lab of Korea University.
-	     My main research interests are 3D Reconstruction and SLAM. 
+description: |+
+Hello! I'm an undergraduate intern at the Media Lab of Korea University.
+My main research interests are 3D Reconstruction and SLAM. 
 url: https://eainx.github.io
 avatar: /profile.jpg
 paginate: 5
