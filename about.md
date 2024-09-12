@@ -25,8 +25,8 @@ I major in Architecture and minor in Computer Science. My hobbies are drawing an
 
 
 ### Languages
-&nbsp;&nbsp; **Korean:** native
-&nbsp;&nbsp; **English:** fluent
-&nbsp;&nbsp; **German:** basic
+&nbsp;&nbsp; **Korean:** native   
+&nbsp;&nbsp; **English:** fluent   
+&nbsp;&nbsp; **German:** basic   
 
 Feel free to contact me via [seohyun423@korea.ac.kr](mailto:seohyun423@korea.ac.kr)!
