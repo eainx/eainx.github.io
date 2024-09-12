@@ -14,7 +14,7 @@ I major in Architecture and minor in Computer Science. My hobbies are drawing an
 ***
 
 ### Education
-##### &nbsp;&nbsp;  Korea University
+#### &nbsp;&nbsp;  Korea University
 &nbsp;&nbsp;&nbsp; B.S. in Architecture & Computer Science, 2020 ~ present
 
 ***
