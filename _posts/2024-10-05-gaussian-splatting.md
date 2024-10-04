@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 3D Gaussian Splatting
-tags: 3D Reconstruction, Rendering, View Synthesis, Gaussian
+tags: 3DReconstruction, Rendering, ViewSynthesis, Gaussian
 published: true
+use_math: true
 date: 2024-10-05 01:00 +0900
 ---
 
