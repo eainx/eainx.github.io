@@ -7,9 +7,10 @@ math: true
 date: 2024-10-05 01:00 +0900
 ---
 
+
 [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
 
-**[목차]**
+
 
 ### **Ⅰ. 연구의 배경**
 
@@ -62,6 +63,7 @@ date: 2024-10-05 01:00 +0900
         - MVS를 요구하지 않는다. (대신 SfM을 요구한다.)
             - SfM은 이미지를 통해 카메라 포즈와 sparse한 포인트 클라우드를 출력하며, MVS는 이미지와 카메라 포즈(SfM의 결과물)를 이용하여 dense한 모델을 출력한다.
 
+
 ### **Ⅱ. 3차원 가우시안 (3D Gaussian)**
 
 - **도입 배경**
@@ -76,7 +78,7 @@ date: 2024-10-05 01:00 +0900
     
     - where Σ is 3D covariance matrix (3x3), center point(mean). Multiplied by 𝛼 in blending process.
         
-        ![image.png](./3dgs/image.png)
+        ![image.png](/home/eainx/workspace/eainx.github.io/_posts/3dgs/image.png)
         
 - **공분산 행렬 (covariance matrix)의 표현**
     
@@ -103,7 +105,7 @@ date: 2024-10-05 01:00 +0900
     
     - 유도과정 ([https://xoft.tistory.com/49](https://xoft.tistory.com/49), [https://www.cs.umd.edu/~zwicker/publications/EWASplatting-TVCG02.pdf](https://www.cs.umd.edu/~zwicker/publications/EWASplatting-TVCG02.pdf) 참고)
         
-        ![image.png](./3dgs/image1.png)
+        ![image.png](/home/eainx/workspace/eainx.github.io/_posts/3dgs/image1.png)
         
         - camera space의 좌표 t를 ray space의 좌표 x로 변환하는 것은 비선형이다.
         - 비선형 변환을 선형 변환으로 만들기 위해 2차 테일러 다항식으로 근사한다.
@@ -144,9 +146,10 @@ date: 2024-10-05 01:00 +0900
         $$
         
 
+
 ### **Ⅲ. 최적화 (Optimization)**
 
-![image.png](./3gds/image2.png)
+![image.png](/home/eainx/workspace/eainx.github.io/_posts/3dgs/image2.png)
 
 - **Gaussian parameters**
     - 위치 𝑝
@@ -169,7 +172,7 @@ date: 2024-10-05 01:00 +0900
     
 - **알고리즘**
     
-    ![image.png](./3gds/image3.png)
+    ![image.png](/home/eainx/workspace/eainx.github.io/_posts/3dgs/image3.png)
     
     - **Densify**
         - 매 100 iteration마다 수행한다.
@@ -186,12 +189,13 @@ date: 2024-10-05 01:00 +0900
         - 3000 iteration마다 수행한다.
         - 가우시안의 개수가 너무 많아져 floater가 생기는 문제를 해결한다.
 
+
 ### **Ⅳ.** 래스터라이저 (Fast Differentiable Rasterizer)
 
 - Tile-based 래스터라이저
 - **알고리즘**
     
-    ![image.png](./3gds/image4.png)
+    ![image.png](/home/eainx/workspace/eainx.github.io/_posts/3dgs/image4.png)
     
     - 16x16 tiles로 화면을 분할함
     - view frustum 밖의 가우시안을 삭제함 (99%이상이 view frustum과 겹치는 경우만 살림)
@@ -208,6 +212,7 @@ date: 2024-10-05 01:00 +0900
     - Backward pass
         - 각 픽셀은 c에 기여한 마지막 점의 깊이보다 적거나 같은 깊이의 점들만 처리한다.
         - 다시 탐색하는 것을 막기 위해, 끝에서 총 누적 불투명도만 저장함으로써 중간 불투명도를 복구한다.
+
 
 ### **Ⅴ.** 한계 및 생각
 
