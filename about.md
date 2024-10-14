@@ -4,11 +4,11 @@ title: About me
 ---
 ## Hi, there!
 I'm an undergraduate intern at the [Media Lab](https://media.korea.ac.kr/) of [Korea University](https://www.korea.edu/).
-I major in Architecture and minor in Computer Science. My hobbies are drawing and taking pictures. 
+I major in Architecture and minor in Computer Science. My hobbies are drawing, taking photographs, and traveling to discover relaxing spots.
 
 ***
 
-### Interests 
+### Research Interests 
 3D Reconstruction, SLAM, Deep Learning
 
 ***
@@ -20,6 +20,8 @@ I major in Architecture and minor in Computer Science. My hobbies are drawing an
 ***
 
 ### Publications
+[Superpixel-guided Sampling for Compact 3D Gaussian Splatting](https://dl.acm.org/doi/10.1145/3641825.3687719)
+&nbsp;&nbsp;&nbsp; MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han
 
 ***
 
