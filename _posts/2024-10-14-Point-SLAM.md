@@ -19,7 +19,7 @@ date: 2024-10-14 17:49 +0900
 - **Scene Representation**
     - **grid 기반**
         - dense grid, hierarchial octrees, voxel hashing
-        - 장점: 이웃 탐색(neighborhood look up)과 컨텍스트 집계(context aggregation)기 쉽다.
+        - 장점: 이웃 탐색(neighborhood look up)과 컨텍스트 집계(context aggregation)가 쉽다.
         - 한계: 해상도가 먼저 정의되어야 하며, 중간에 바뀔 수 없다. 즉, 메모리 낭비가 크다.
     - **point 기반**
         - 장점: point의 밀도가 미리 정의될 필요가 없다. 또한, surface에 집중되어 free space를 모델링할 필요가 없으므로 메모리 낭비가 적다.
@@ -194,7 +194,7 @@ date: 2024-10-14 17:49 +0900
 
 ### **V. 결론**
 
-![image.png](https://file.notion.so/f/f/ba6daae0-3a94-4ebe-93cd-85879b4d7406/ad629f90-b232-43c8-b0ac-8e271c47aeb8/image.png?table=block&id=11fb5d10-e488-80e0-8f37-f87ea3e55cc6&spaceId=ba6daae0-3a94-4ebe-93cd-85879b4d7406&expirationTimestamp=1729036800000&signature=EQwxkeJiQMydweua_dqNfXtyKRiM_9fgArTeThjZTa8&downloadName=image.png)
+![image.png](https://github.com/user-attachments/assets/f698cf34-4eda-497c-a925-8e64a60d7a83)
 
 - synthetic dataset인 Replica에서는 월등한 결과를 보였지만, TUM-RGBD 이나 ScanNet과 같이 실제 깊이 카메라로 촬영하여 noise가 발생하는 경우에는 tracking 성능이 떨어진다.
 - 모션 블러나 반사(specularity)에 취약하다.
