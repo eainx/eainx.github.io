@@ -7,6 +7,8 @@ math: true
 date: 2024-10-05 01:00 +0900
 ---
 
+# 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+
 
 [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
 
