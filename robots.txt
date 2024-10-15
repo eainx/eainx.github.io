@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eainx.github.io/
