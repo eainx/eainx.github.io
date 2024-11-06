@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D Gaussian Splatting 코드분석
+title: 3D Gaussian Splatting 코드 분석
 tags: 3DReconstruction, Rendering, ViewSynthesis, Gaussian
 published: true
 math: true
@@ -27,7 +27,10 @@ date: 2024-11-06 21:00 +0900
     python train.py -s <path to COLMAP or NeRF Synthetic dataset>
     ```
     
-    - Command Line Arguments for train.py
+    	<details>
+	<summary>Command Line Arguments for train.py</summary>
+	<div markdown="1">
+
         - -source_path / -s
         
         Path to the source directory containing a COLMAP or Synthetic NeRF data set.
@@ -167,7 +170,8 @@ date: 2024-11-06 21:00 +0900
         - -percent_dense
         
         Percentage of scene extent (0--1) a point must exceed to be forcibly densified, `0.01` by default.
-        
+        </div>
+	</details>
     - 초기화
         - 가우시안 모델 생성
             
