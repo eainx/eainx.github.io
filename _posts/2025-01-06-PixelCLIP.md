@@ -4,7 +4,7 @@ title: PixelCLIP: Towards Open-Vocabulary Semantic Segmentation Without Semantic
 tags: CLIP, SemanticSegmentation
 published: true
 math: true
-date: 2025-01-06 18:00 +0900
+date: 2025-01-06 09:00 +0900
 ---
 
 # PixelCLIP: Towards Open-Vocabulary Semantic Segmentation Without Semantic Labels
