@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PixelCLIP: Towards Open-Vocabulary Semantic Segmentation Without Semantic Labels 리뷰
+title: PixelCLIP 리뷰
 tags: CLIP, SemanticSegmentation
 published: true
 math: true
