@@ -17,8 +17,9 @@ Deep Learning, 3D Vision, 3D Reconstruction
 ### Work Experience
 - **CVLAB**   
 Research Intern, 2025.03 ~ present
-- **Media LAB**   
+- **Media Lab**   
 Research Intern, 2023.08 ~ 2025.03
+
 ***
 
 ### Education
