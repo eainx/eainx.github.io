@@ -3,15 +3,22 @@ layout: page
 title: About me
 ---
 ## Hi, there!
-I'm an undergraduate intern at the [Media Lab](https://media.korea.ac.kr/) of [Korea University](https://www.korea.edu/).   
+I'm an undergraduate intern at the [CVLAB](https://cvlab.kaist.ac.kr/) of [KAIST AI](https://gsai.kaist.ac.kr/).   
 I major in Architecture and minor in Computer Science.   
 My hobbies are drawing, taking photographs, and traveling to discover relaxing spots.
 
 ***
 
 ### Research Interests 
-3D Reconstruction, SLAM, Deep Learning
+Deep Learning, 3D Vision, 3D Reconstruction
 
+***
+
+### Work Experience
+- **CVLAB**   
+Research Intern, 2025.03 ~ present
+- **Media LAB**   
+Research Intern, 2023.08 ~ 2025.03
 ***
 
 ### Education
