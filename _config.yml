@@ -51,9 +51,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Seohyeon Park
+  url: https://eainx.github.io
+  email: seohyun423@korea.ac.kr
   
 plugins:
   - jekyll-remote-theme

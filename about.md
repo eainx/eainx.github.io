@@ -24,7 +24,7 @@ Research Intern, 2023.08 ~ 2025.03
 
 ### Education
 - **Korea University**   
-B.S. in Architecture & Computer Science, 2020 ~ present
+B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (Expected)
 
 ***
 
