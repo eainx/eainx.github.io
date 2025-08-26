@@ -76,32 +76,12 @@ date: 2025-04-08 09:00 +0900
             - 기존 RPE (Relative Postion Embedding) 방식은 Relative position 정보를 **더하는** 방식인데, 이러면 내적을 할 때 (qTk) 두 벡터 간의 상대 거리 (각도)가 보존됨
             - 즉, position index로 weight한 일정량으로 회전시켜 임베딩하면, 효과적으로 두 벡터 간의 상대 거리를 나타낼 수 있음
             
-            ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image.png)
-            
-        
-        ![Screenshot from 2025-04-01 09-30-58.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/Screenshot_from_2025-04-01_09-30-58.png)
-        
-        ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%201.png)
-        
         - 이미지 토큰 X에 rotation matrix R(i,j)를 적용함 (token의 2D그리드상  위치 (i,j)에 따라)
         - 텍스트 토큰 Ct에는 position을 (0,0)으로 놓고 같은 rotation 적용 (공간 정보가 없기 때문에)
             
-            ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%202.png)
-            
-    
-    ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%203.png)
-    
     - **Multimodal attention**
         - positional encoding된 토큰들을 query Q, key K, value K로 project시켜, attention계산
-        - [X;Ct]는 이미지와 텍스트의 concat을 말함 (bidirectional attention)
-            
-            ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%204.png)
-            
-    
-    ![[https://www.reddit.com/r/StableDiffusion/comments/1fds59s/a_detailled_flux1_architecture_diagram/](https://www.reddit.com/r/StableDiffusion/comments/1fds59s/a_detailled_flux1_architecture_diagram/)](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%205.png)
-    
-    [https://www.reddit.com/r/StableDiffusion/comments/1fds59s/a_detailled_flux1_architecture_diagram/](https://www.reddit.com/r/StableDiffusion/comments/1fds59s/a_detailled_flux1_architecture_diagram/)
-    
+        - [X;Ct]는 이미지와 텍스트의 concat을 말함 (bidirectional attention)x
 
 ### ■ Minimal Design
 
@@ -118,8 +98,6 @@ date: 2025-04-08 09:00 +0900
 
 💡 **기존 문제점**
 
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%206.png)
-
 ControlNet이나 T2I-Adapter 같은 모델은 보통 condition feature를 더하는 방식을 사용함
 
 - hX ← hX + hCI
@@ -128,9 +106,6 @@ ControlNet이나 T2I-Adapter 같은 모델은 보통 condition feature를 더하
 - condition과 image token간의 잠재적 interaction을 제한함
 
 **💡 해결책**
-
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%207.png)
-
 - condition 이미지도 text처럼 **token화해서 (condition token) transformer의 input으로 직접 concat**
     
     ```
@@ -147,7 +122,6 @@ ControlNet이나 T2I-Adapter 같은 모델은 보통 condition feature를 더하
 
 💡 **기존 문제점**
 
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%208.png)
 
 Transformer는 RoPE (Rotary Position Embedding)을 통해 토큰의 위치를 인식하지만, condition token은 spatial align이 아닐 수 있어서 문제 생김
 
@@ -157,8 +131,6 @@ Transformer는 RoPE (Rotary Position Embedding)을 통해 토큰의 위치를 �
     - 그런데, subject-driven 같은 비정렬 task에서는 **조건 토큰과 이미지 토큰의 위치 인덱스가 겹쳐서 문제가 생김 (위에 펭귄 사라짐)**
 
 💡 **해결책**
-
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%209.png)
 
 두 가지 케이스를 나눔:
 
@@ -185,11 +157,6 @@ Transformer는 RoPE (Rotary Position Embedding)을 통해 토큰의 위치를 �
 - attention 연산에서 bias 행렬 B(γ)를 추가해 조건 토큰 간의 attention을 조절:
     
     `bias = torch.log(attn.c_factor[0])`
-    
-    ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%2010.png)
-    
-    ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%2011.png)
-    
     ```
     MMA = softmax(QKᵀ / √d + B(γ)) · V
     ```
@@ -250,8 +217,6 @@ Transformer는 RoPE (Rotary Position Embedding)을 통해 토큰의 위치를 �
     - **Controllabiltiy**
         - F1 / MSE
             
-            ![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%2012.png)
-            
     - **Image Quality**
         - FID (이미지 품질 및 다양성)
         - SSIM (구조 유사도)
@@ -288,10 +253,6 @@ Transformer는 RoPE (Rotary Position Embedding)을 통해 토큰의 위치를 �
     - OminiControl이 기존 IP-Adapter 대비 모든 지표에서 우수
     - Identity preservation: 82.3%
     - Modification accuracy: 90.7% → 조건 반영을 매우 잘함
-
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%2013.png)
-
-![image.png](OminiControl%20Minimal%20and%20Universal%20Control%20for%20Dif%201c5b5d10e48880e88c1bd233fcacdea3/image%2014.png)
 
 ### ❗한계점
 
