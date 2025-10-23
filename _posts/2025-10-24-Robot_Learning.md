@@ -4,7 +4,7 @@ title: Robot Learning 리뷰
 tags: VLA, Survey
 published: true
 math: true
-date: 2025-10-24 09:00 +0900
+date: 2025-10-23 09:00 +0900
 ---
 
 
