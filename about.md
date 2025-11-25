@@ -15,16 +15,18 @@ VLA, Robotics, 3D Vision, 3D Reconstruction
 ***
 
 ### Work Experience
-- **PI LAB**  
+- **PILAB, SNU**  
 MS-PhD Integrated Student, 2026.03 ~
-- **CVLAB**   
+- **CVLAB, KAIST AI**   
 Research Intern, 2025.03 ~ 2025.11
-- **Media Lab**   
+- **Media Lab, KU**   
 Research Intern, 2023.08 ~ 2025.03
 
 ***
 
 ### Education
+- **Seoul University**  
+MS-PhD Integrated Program in Artificial Intelligence, 2026.03 ~
 - **Korea University**   
 B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (Expected)
 
