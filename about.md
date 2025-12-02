@@ -47,7 +47,6 @@ Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**,
 
 ***
 
-
 ### Languages
 &nbsp;&nbsp; **Korean:** native   
 &nbsp;&nbsp; **English:** fluent   
