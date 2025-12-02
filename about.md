@@ -3,8 +3,8 @@ layout: page
 title: About me
 ---
 ## Hi, there!
-I'm a first-year MS-PhD integrated student at the [PILAB](https://pi.snu.ac.kr/) of [SNU IPAI](https://gsai.snu.ac.kr/).   
-I major in Architecture and minor in Computer Science.   
+I'm a first-year MS-PhD integrated student at [PILAB](https://pi.snu.ac.kr/) in [SNU IPAI](https://gsai.snu.ac.kr/).   
+When I was an undergraduate, I majored in Architecture and minored in Computer Science.
 My hobbies are drawing, taking photographs, and traveling to discover relaxing spots.
 
 ***
@@ -34,14 +34,16 @@ B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (Expected)
 
 ### Publications
 - **[Superpixel-guided Sampling for Compact 3D Gaussian Splatting](https://dl.acm.org/doi/10.1145/3641825.3687719)**  
-*VRST 2024*, MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han
+MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han
+*VRST 2024*  
 
 - **EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting**  
-*WACV 2026*, MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han
+MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han
+*WACV 2026*  
 
-- **MV-TAP: Tracking Any Point in Multi-View Videos**  
-*Under Review, 2026*
-
+- **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)
+Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim
+*Under Review 2025*
 ***
 
 

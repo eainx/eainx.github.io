@@ -22,9 +22,9 @@ date: 2025-10-23 09:00 +0900
 - SO-100은 저렴하지만 Aloha/Franka Emika Panda는 비싸다
     - 시뮬레이터가 괜히 있는게 아니구나
 
-![image.png](Robot/image.png)
+![image.png](/assets/Robot/image.png)
 
-![image.png](Robot/image%201.png)
+![image.png](/assets/Robot/image%201.png)
 
 - Explicit/Implicit Models
     - Explicit: Dynamic based methods (동역학 -  FK/IK 기반)
@@ -62,9 +62,9 @@ date: 2025-10-23 09:00 +0900
 
 ### Limitations of Dynamics-based Robotics
 
-![image.png](Robot/image%202.png)
+![image.png](/assets/Robot/image%202.png)
 
-![image.png](Robot/image%203.png)
+![image.png](/assets/Robot/image%203.png)
 
 - Classical Methods
     - Lack of Generalization
@@ -77,7 +77,7 @@ date: 2025-10-23 09:00 +0900
 
 →  결론: learning-based approach가 좋다. (마치 SLAM 같군….)
 
-![image.png](Robot/image%204.png)
+![image.png](/assets/Robot/image%204.png)
 
 - Learning method에는 RL(Reinforcement Learning)과 BC(Behavior cloning = imitation)이 있음
 - RL→BC로 트렌드가 바뀜 (최근 VLA논문만 봐도 그런듯)
@@ -90,7 +90,7 @@ date: 2025-10-23 09:00 +0900
 
 1. What is RL(강화학습)?
     
-    ![image.png](Robot/image%205.png)
+    ![image.png](/assets/Robot/image%205.png)
     
     - ML의 한 분야로 “에이전트(Agent)”가 “환경(Environment)”와 지속적으로 상호작용하여 최적의 “정책(Policies)”을 학습하는 것을 목표로 함
         - Agent는 Explicit한 problem modeling 대신 상호작용 데이터를 통해 Trial and error로 스스로 개선함
@@ -126,7 +126,6 @@ date: 2025-10-23 09:00 +0900
             $$
             G(\tau) = \sum_{t=0}^{T-1} \gamma^t r_t.\\
             J(\pi_\theta) = \mathbb{E}_{\tau \sim \mathbb{P}_{\theta;D}}[G(\tau)],
-            
             $$
             
         - 그래서 optimal policy π∗ = arg maxθ J(πθ ) 이다.
@@ -136,7 +135,6 @@ date: 2025-10-23 09:00 +0900
             $$
             V_{\pi}(s) = \mathbb{E}_{\tau \sim \pi}[G(\tau) | s_0 = s]\\
             Q_\pi (s, a) = \mathbb{E}_{\tau \sim \pi} [G(\tau)|s_0 = s, a_0 = a].\\
-            
             $$
             
             $$
@@ -147,7 +145,7 @@ date: 2025-10-23 09:00 +0900
             $$
             
 
-![image.png](Robot/image%206.png)
+![image.png](/assets/Robot/image%206.png)
 
 1. Real-world RL for Robotics
     - 하지만 실제로 Real world에서 적용하기에는 simulation과 real world의 gap이 커서 어렵다.
@@ -210,9 +208,9 @@ date: 2025-10-23 09:00 +0900
             - Targeted Human corrections
             - Prior data로 reward classifier을 학습하고 expert trajectory를 활용
         
-        ![image.png](Robot/image%207.png)
+        ![image.png](/assets/Robot/image%207.png)
         
-        ![image.png](Robot/image%208.png)
+        ![image.png](/assets/Robot/image%208.png)
         
 
 1. But RL still has limitations…
@@ -248,9 +246,9 @@ date: 2025-10-23 09:00 +0900
     
 1. **Generative Models**
     
-    ![image.png](Robot/image%209.png)
+    ![image.png](/assets/Robot/image%209.png)
     
-    ![image.png](Robot/image%2010.png)
+    ![image.png](/assets/Robot/image%2010.png)
     
     - **VAE**
     - **Diffusion models**
@@ -270,11 +268,11 @@ date: 2025-10-23 09:00 +0900
         - CVAE는 z를 학습하고 encoding→decoding 하는데,
         - Training 시에는 approximate posterior distribution q(z|o,a) 에서 sample 되고 inference시에는  z=0으로 놓고 deterministic하게 함 (prior distribution = N(0,I))
 
-![image.png](Robot/image%2011.png)
+![image.png](/assets/Robot/image%2011.png)
 
-![image.png](Robot/image%2012.png)
+![image.png](/assets/Robot/image%2012.png)
 
-![image.png](Robot/image%2013.png)
+![image.png](/assets/Robot/image%2013.png)
 
 1. **Diffusion Policy**
     - ACT와 마찬가지로 observation-conditioned target distribution을 사용하고, action chunk를 예측하게 함
@@ -287,7 +285,7 @@ date: 2025-10-23 09:00 +0900
         - DDIM 적용 (inference 속도를 위해 → 그러나 deterministic함.)
         - 또한 Transformer based가 더 성능이 좋지만 hyperparams에 예민하기 때문에 convolution을
 
-![image.png](Robot/image%2014.png)
+![image.png](/assets/Robot/image%2014.png)
 
 1. **Optimized Inference**
 - 액션 계획(action planning)과 액션 실행(action execution)을 분리(decoupling)
@@ -306,7 +304,7 @@ date: 2025-10-23 09:00 +0900
 
 ---
 
-![image.png](Robot/image%2015.png)
+![image.png](/assets/Robot/image%2015.png)
 
 - ‘Generalist’ Policy of NLP and CV
     1. initial large scale pre-training stage
@@ -319,11 +317,11 @@ date: 2025-10-23 09:00 +0900
     - 이러한 데이터를 aggregate하는 것은 negative transfer을 일으킬 수 있음
 - Development of Generalist models
     
-    ![image.png](Robot/image%2016.png)
+    ![image.png](/assets/Robot/image%2016.png)
     
     - Models
         
-        ![image.png](Robot/image%2017.png)
+        ![image.png](/assets/Robot/image%2017.png)
         
         - RT-1
             - transformer 구조 사용
@@ -353,7 +351,7 @@ date: 2025-10-23 09:00 +0900
 - VLM for VLAs
 - **Pi-0**
     
-    ![image.png](Robot/image%2018.png)
+    ![image.png](/assets/Robot/image%2018.png)
     
     - MoE architecture
     - Unified transformer
@@ -372,7 +370,7 @@ date: 2025-10-23 09:00 +0900
         - cross-embodiment → zero padding을 통해 해결함
     - **SmolVLA**
         
-        ![image.png](Robot/image%2019.png)
+        ![image.png](/assets/Robot/image%2019.png)
         
         - SmolVLM-2
             - SigLIP vision encoder
