@@ -34,16 +34,17 @@ B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (Expected)
 
 ### Publications
 - **[Superpixel-guided Sampling for Compact 3D Gaussian Splatting](https://dl.acm.org/doi/10.1145/3641825.3687719)**  
-MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han
+MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han  
 *VRST 2024*  
 
 - **EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting**  
-MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han
+MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han  
 *WACV 2026*  
 
-- **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)
-Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim
-*Under Review 2025*
+- **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)  
+Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim  
+*Under Review 2025*  
+
 ***
 
 

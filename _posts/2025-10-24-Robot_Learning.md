@@ -101,7 +101,8 @@ date: 2025-10-23 09:00 +0900
     > where an agent interacts with its environment/state. 
     > 
     > 강화학습은 AI Agent가 특정 state/situation 내에 최대의 보상 Q를 가져다주는 action을 학습하는 과정이다.
-    > 
+    
+    
     - **Markov Decision Process (MDP)**
         - Discrete time을 가정함
         - M = ⟨S, A, D, r, γ, ρ, T ⟩
@@ -111,9 +112,9 @@ date: 2025-10-23 09:00 +0900
             - ρ=distribution over S for initial (s_0 ~ρ)
             - T=length
                 
-                $$
-                \tau = (s_0, a_0, r_0, s_1, a_1, r_1, \dots, s_{T-1}, a_{T-1}, r_{T-1}, s_T)
-                $$
+        $$
+        \tau = (s_0, a_0, r_0, s_1, a_1, r_1, \dots, s_{T-1}, a_{T-1}, r_{T-1}, s_T)
+        $$
                 
         - Markov assumption을 통해 joint probability conditional probability의 곱으로 분해할 수 있음
             
