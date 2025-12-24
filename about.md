@@ -25,7 +25,7 @@ Research Intern, 2023.08 ~ 2025.03
 ***
 
 ### Education
-- **Seoul University**  
+- **Seoul National University**  
 MS-PhD Integrated Program in Artificial Intelligence, 2026.03 ~
 - **Korea University**   
 B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (Expected)
@@ -42,7 +42,7 @@ MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jun
 *WACV 2026*  
 
 - **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)  
-Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim  
+Jahyeok Koo\*, Ines Hyeonsu Kim\*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim  
 *Under Review 2025*  
 
 ***
@@ -52,4 +52,4 @@ Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**,
 &nbsp;&nbsp; **English:** fluent   
 &nbsp;&nbsp; **German:** basic   
 
-Feel free to contact me via [seohyun423@korea.ac.kr](mailto:seohyun423@korea.ac.kr)!
+Feel free to contact me via [seohyun423@snu.ac.kr](mailto:seohyun423@snu.ac.kr)!
