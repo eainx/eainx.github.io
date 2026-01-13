@@ -8,21 +8,19 @@ date: 2026-01-13 09:00 +0900
 ---
 
 
-# LeIsaac
-
 # Isaac GR00T N1.6을 LeRobot SO-101 Arm으로 파인튜닝하기
 
 ## **참고자료**
 
 - **GR00T N1.5 버전 Manual**
 
-https://velog.io/@choonsik_mom/Leisaac-LeRobot-Gr00t-IsaacSim%EC%9C%BC%EB%A1%9C-%EC%9E%85%EB%AC%B8%ED%95%98%EB%8A%94-VLA-Finetuning
+[https://velog.io/@choonsik_mom/Leisaac-LeRobot-Gr00t-IsaacSim%EC%9C%BC%EB%A1%9C-%EC%9E%85%EB%AC%B8%ED%95%98%EB%8A%94-VLA-Finetuning](https://velog.io/@choonsik_mom/Leisaac-LeRobot-Gr00t-IsaacSim%EC%9C%BC%EB%A1%9C-%EC%9E%85%EB%AC%B8%ED%95%98%EB%8A%94-VLA-Finetuning)
 
-https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning
+[https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning](https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning)
 
 - **GR00T N1.6 버전 Manual**
 
-https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100
+[https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100](https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100)
 
 ## 사건
 
@@ -52,7 +50,7 @@ LeIsaac = LeRobot + GR00T + Isaac Sim을 연결한다고 해서 실행해보고�
 ## 해결
 
 1. Lerobot dataset이 v3이어서, `episodes.jsonl`이 존재하지 않음
-    - 이 경우 해결책은 다음과 같다.  https://github.com/NVIDIA/Isaac-GR00T/blob/main/scripts/lerobot_conversion/README.md
+    - 이 경우 해결책은 다음과 같다.  [https://github.com/NVIDIA/Isaac-GR00T/blob/main/scripts/lerobot_conversion/README.md](https://github.com/NVIDIA/Isaac-GR00T/blob/main/scripts/lerobot_conversion/README.md)
     - 이 스크립트를 이용해 LeRobot v3에서 v2로 바꾼 후 실행하면 된다.
     - `python convert_v3_to_v2.py --repo-id <hf_id/hf_repo> --local-dir <download_path>`
 2. `ValueError: Default process group has not been initialized, please make sure to call init_process_group.` (분산학습 문제)
@@ -108,7 +106,7 @@ LeIsaac = LeRobot + GR00T + Isaac Sim을 연결한다고 해서 실행해보고�
     - 내가 isaacsim은 conda로 했으니까 나중에 Leisaac을 eval할때는 server를 켜놓고 따로 isaacsim을 실행하면 되는 것이다. (아마도)
     - Isaac-GR00T closed loop eval 의 경우 는 다음과 같다. 난 로봇이 없으니까 할 수 없다.
     
-    https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100#closed-loop-evaluation 
+    [https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100#closed-loop-evaluation](https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/SO100#closed-loop-evaluation)
     
 
 ## 결과
