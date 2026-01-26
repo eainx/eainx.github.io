@@ -54,8 +54,7 @@ LeIsaac = LeRobot + GR00T + Isaac Sim을 연결한다고 해서 실행해보고�
     - 이 스크립트를 이용해 LeRobot v3에서 v2로 바꾼 후 실행하면 된다.
     - `python convert_v3_to_v2.py --repo-id <hf_id/hf_repo> --local-dir <download_path>`
 2. `ValueError: Default process group has not been initialized, please make sure to call init_process_group.` (분산학습 문제)
-    - 이 경우 제미나이가 알려준 해결책은 일단 torchrun 부분을 주석해제 하는 것이다.
-    - 그래도 문제가 생기는데, 그것은 바로
+    - 이 경우 DDP 가 설정 되어있는데 GPU가 1개뿐이라서 그렇다. 이 경우 torchrun으로 --nproc_per_node=1해주면 된다.
     - 내 실행코드는 다음과 같다.
         
         ```bash
