@@ -29,6 +29,7 @@ Research Intern, 2023.08 ~ 2025.03
 MS-PhD Integrated Program in Artificial Intelligence, 2026.03 ~
 - **Korea University**   
 B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (GPA: 4.05 / 4.5)
+
 ***
 
 ### Publications
