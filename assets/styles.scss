@@ -31,7 +31,8 @@
 @import "toc";
 @import "alignment";
 
-@import "syntax-light";
+// @import "syntax-light";
+@import "syntax-dark";
 // @media (prefers-color-scheme: dark) {
 //   @import "syntax-dark";
 // }
@@ -61,4 +62,62 @@ a {
     text-decoration: underline !important;
     opacity: 0.8;
   }
+}
+
+
+div.highlight {
+  background-color: #1e1e1e !important; /* VS Code 느낌의 진한 배경 */
+  color: #d4d4d4 !important; /* 기본 글자색을 밝게 */
+  border-radius: 12px; /* 둥근 모서리 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 깊이감 있는 그림자 */
+  margin: 2rem 0; /* 위아래 여백 확보 */
+  padding-top: 35px !important; /* 상단 버튼 들어갈 자리 확보 */
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56; /* 빨강 버튼 */
+    box-shadow: 20px 0 0 #ffbd2e, /* 노랑 버튼 */
+                40px 0 0 #27c93f; /* 초록 버튼 */
+  }
+
+  pre {
+    margin: 0;
+    padding: 1rem 1.5rem !important;
+    overflow-x: auto; /* 가로 스크롤 */
+  }
+
+  code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.sidebar a, .masthead a, .navigation-item a {
+  color: #fff !important;
+  border-bottom-color: rgba(255,255,255,0.3) !important;
+  
+  &:hover {
+    color: #fff !important;
+    opacity: 0.8;
+  }
+}
+
+aside, [class*="sidebar"] {
+  background-color: #222 !important;
+}
+
+.related, .related-posts {
+  background-color: transparent !important; /* 배경 투명하게 (흰색 본문 배경이 보이게) */
+  color: var(--body-color) !important;      /* 글자색은 본문 색으로 */
+  border-top: 1px solid var(--gray-200);   /* 위쪽에 구분선 하나 추가 (선택사항) */
+  padding: 2rem 0;
 }
