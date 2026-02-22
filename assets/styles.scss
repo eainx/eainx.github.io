@@ -32,9 +32,9 @@
 @import "alignment";
 
 @import "syntax-light";
-@media (prefers-color-scheme: dark) {
-  @import "syntax-dark";
-}
+// @media (prefers-color-scheme: dark) {
+//   @import "syntax-dark";
+// }
 
 // Sass for creating the swatches
 .colors {
@@ -50,5 +50,15 @@
 
   dd {
     margin-left: var(--spacer);
+  }
+}
+
+a {
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out;
+  
+  &:hover {
+    text-decoration: underline !important;
+    opacity: 0.8;
   }
 }
