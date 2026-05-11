@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SO-101 Arm 텔레오퍼레이션으로 데이터 생성하고 파인튜닝하기
+title: Teleoperate SO-101 Arm and Finetune SmolVLA
 tags: VLA, Robotics
 published: true
 math: true
