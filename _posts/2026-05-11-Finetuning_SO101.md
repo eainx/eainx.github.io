@@ -230,7 +230,7 @@ lerobot-record \
 
 하는 도중 선이 끊기거나 하면 바로 문제가 생겨서 클램프로 로봇을 잘 고정시키고 진행해줘야 한다.
 
-데이터셋은 huggingface `eainx/pick_up_dorami`에 올려두었다. 데이터셋 품질이 안 좋아서 활용도는 없다.
+데이터셋은 huggingface [`eainx/pick_up_dorami`](https://huggingface.co/datasets/eainx/pick_up_dorami)에 올려두었다. 데이터셋 품질이 안 좋아서 활용도는 없다.
 
 ### 파인튜닝
 
