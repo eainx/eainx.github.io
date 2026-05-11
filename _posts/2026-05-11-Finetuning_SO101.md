@@ -14,13 +14,13 @@ date: 2026-05-11 09:00 +0900
 
 ### 참고 자료
 
-https://huggingface.co/docs/lerobot/so101
+[https://huggingface.co/docs/lerobot/so101](https://huggingface.co/docs/lerobot/so101)
 
-https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning
+[https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning](https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning)
 
-https://cory619.tistory.com/25
+[https://cory619.tistory.com/25]([https://cory619.tistory.com/25])
 
-https://wikidocs.net/325771
+[https://wikidocs.net/325771](https://wikidocs.net/325771)
 
 ### 환경 설정
 
