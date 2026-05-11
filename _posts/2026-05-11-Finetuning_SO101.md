@@ -54,7 +54,7 @@ https://wikidocs.net/325771
     Reconnect the USB cable.
     ```
     
-    네 경우, `dev/ttyACM0`와 `dev/ttyACM1`이였다. (이게 항상 고정된 것은 아니고 먼저 꽂는 게 0, 나중에 꽂는 게 1이다.)
+    내 경우, `dev/ttyACM0`와 `dev/ttyACM1`이였다. (이게 항상 고정된 것은 아니고 먼저 꽂는 게 0, 나중에 꽂는 게 1이다.)
     
     그런데, 그냥 하면 permission denied가 되므로,  `sudo chmod 666 /dev/ttyACM0`와 `sudo chmod 666 /dev/ttyACM1` 을 통해 권한을 부여해주면 된다.
     
@@ -94,6 +94,8 @@ https://wikidocs.net/325771
     | --- | --- | --- | --- | --- | --- |
     | 베이스 | 숄더 | 엘보 | 손목 굽힘 | 손목 회전 | 그리퍼 |
     | Board - 2 | 1 - 3 | 2 - 4 | 3 - 5 | 4 - 6 | 5 - X |
+
+    
 3. 주의 사항 - 잘 안 되는 경우
     - 전원 어댑터를 잘못 연결한 경우
     - 선을 헷갈려서 모터를 잘못 입력한 경우 - 뭔가 문제가 있다면 모터 연결부터 다시 해보는 것을 추천

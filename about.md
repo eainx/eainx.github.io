@@ -38,7 +38,7 @@ B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (GPA: 4.05 / 4.5)
 Jahyeok Koo\*, Ines Hyeonsu Kim\*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim  
 *CVPR 2026*   
 
-- **EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting**  
+- **[EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting](https://openaccess.thecvf.com/content/WACV2026/html/Kim_EllipssianNet_Image-guided_Sampling_of_2D_Gaussians_for_Gaussian_Splatting_WACV_2026_paper.html)**
 MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han  
 *WACV 2026*   
 
