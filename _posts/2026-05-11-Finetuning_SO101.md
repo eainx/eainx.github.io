@@ -8,7 +8,7 @@ date: 2026-05-11 09:00 +0900
 ---
 
 
-### SO-101 Arm 텔레오퍼레이션으로 데이터 생성하고 파인튜닝하기
+## SO-101 Arm 텔레오퍼레이션으로 데이터 생성하고 파인튜닝하기
 
 해본 지는 오래됐는데, 그동안 시간이 하나도 없어서 작성을 못헸다.
 
@@ -18,7 +18,7 @@ date: 2026-05-11 09:00 +0900
 
 [https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning](https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning)
 
-[https://cory619.tistory.com/25]([https://cory619.tistory.com/25])
+[https://cory619.tistory.com/25](https://cory619.tistory.com/25)
 
 [https://wikidocs.net/325771](https://wikidocs.net/325771)
 
