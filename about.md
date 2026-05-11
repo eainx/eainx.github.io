@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+permalink: /
 ---
 ## Hi, there!
 I'm a first-year MS-PhD integrated student at [PILAB](https://pi.snu.ac.kr/) in [SNU IPAI](https://gsai.snu.ac.kr/).   
