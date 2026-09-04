@@ -5,8 +5,7 @@ permalink: /
 ---
 ## Hi, there!
 I'm a first-year MS-PhD integrated student at [PILAB](https://pi.snu.ac.kr/) in [SNU IPAI](https://gsai.snu.ac.kr/).   
-When I was an undergraduate, I majored in Architecture and minored in Computer Science.
-My hobbies are drawing, taking photographs, and traveling to discover relaxing spots.
+When I was an undergraduate, I majored in Architecture and minored in Computer Science, which fostered both my appreciation for art and my interest in technology. Currently, my research interests include robot learning, 3D vision, simulation, and world models for enabling robots to understand and interact more naturally with real-world environments.
 
 ***
 
