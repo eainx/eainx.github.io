@@ -36,7 +36,7 @@ B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (GPA: 4.05 / 4.5)
 ### Publications
 
 - **[Real-Time Execution with Autoregressive Policies](https://arxiv.org/pdf/2606.13355)** [🔗](https://oddqueue.github.io/realfast/)  
-Sangkyu Lee, **Seohyeon Park**, Tackgeun You, Avi Caciularu, Idan Szpektor, Hwasup Lim, Youngjae Yu
+Sangkyu Lee, **Seohyeon Park**, Tackgeun You, Avi Caciularu, Idan Szpektor, Hwasup Lim, Youngjae Yu  
 *CoRL 2026*   
 
 - **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)  
