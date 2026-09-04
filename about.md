@@ -10,7 +10,7 @@ When I was an undergraduate, I majored in Architecture and minored in Computer S
 ***
 
 ### Research Interests 
-VLA, Robotics, 3D Vision, 3D Reconstruction
+Robot Learning, VLA, WAM, Robotics, 3D Vision, 3D Reconstruction
 
 ***
 
