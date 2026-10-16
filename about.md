@@ -35,6 +35,10 @@ B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (GPA: 4.05 / 4.5)
 
 ### Publications
 
+- **[HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution](https://arxiv.org/abs/2610.02089)** [🔗](https://snu-pi.github.io/HumanoidToolBench/)  
+Kyochul Jang, **Seohyeon Park**, Ohchul Kwon, Sangjun Park, Junhyeok Choi, Seungyeop Yi, Chaeyun Kim, Sangkyu Lee, Idan Szpektor, Avi Caciularu, Jongmin Park, Youngjae Yu   
+*Under Review*  
+
 - **[Real-Time Execution with Autoregressive Policies](https://arxiv.org/pdf/2606.13355)** [🔗](https://oddqueue.github.io/realfast/)  
 Sangkyu Lee, **Seohyeon Park**, Tackgeun You, Avi Caciularu, Idan Szpektor, Hwasup Lim, Youngjae Yu  
 *CoRL 2026*   
