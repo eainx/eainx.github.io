@@ -29,6 +29,7 @@ h2 {
 .intro-photo img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .name { margin: 0 0 8px; font-size: 32px; text-align: center; }
 .links { text-align: center; }
+.intro-text p { text-wrap: pretty; } /* avoid a lone word on the last line */
 
 /* News / blog lists */
 .news, .recent-posts { padding-left: 18px; margin: 0; }

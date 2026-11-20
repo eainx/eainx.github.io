@@ -42,7 +42,8 @@ sections:
 ---
 
 I'm a first-year MS-PhD student at [PILAB](https://pi.snu.ac.kr/), [SNU IPAI](https://gsai.snu.ac.kr/).
-I studied Architecture at Korea University with a minor in Computer Science, and I've been drawn to the space where design meets technology ever since.
+I studied Architecture at Korea University with a minor in Computer Science, which shaped my interest in the intersection of design and technology.
 
-I work on **robot learning**, mainly **VLA** and **world action models**, along with **3D vision** and **simulation**.
-These days I'm most excited about **dexterous manipulation** with multi-fingered hands, **humanoid whole-body control**, and **action representation**, i.e. how to represent robot actions so that one policy can work across different robots and still run smoothly in real time.
+My research focuses on robot learning, mainly VLA and world action models, along with 3D vision and simulation.
+At the moment, I am particularly interested in both <strong class="kw">humanoid whole-body control</strong> and <strong class="kw">dexterous manipulation</strong>.
+I am also exploring <strong class="kw">action representation</strong>, focusing on how actions should be represented so that a single policy can transfer across embodiments and still run smoothly in real time.
