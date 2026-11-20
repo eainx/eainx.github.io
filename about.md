@@ -7,7 +7,7 @@ links:
   - title: Email
     url: mailto:seohyun423@snu.ac.kr
   - title: CV
-    url: https://drive.google.com/file/d/1x_oXyYOtyQVUpdsAEm8ccNgV86GosUZ8/view?usp=sharing
+    url: /assets/cv/CV_SeohyeonPark.pdf
   - title: GitHub
     url: https://github.com/eainx
   - title: LinkedIn
