@@ -1,0 +1,38 @@
+# Publications shown on the homepage (newest first).
+# image: optional thumbnail under assets/pubs/ (png/jpg/gif). video: optional mp4 instead of image.
+# Use "**Seohyeon Park**" style is not needed — your name is bolded automatically.
+
+- title: "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution"
+  authors: "Kyochul Jang, Seohyeon Park, Ohchul Kwon, Sangjun Park, Junhyeok Choi, Seungyeop Yi, Chaeyun Kim, Sangkyu Lee, Idan Szpektor, Avi Caciularu, Jongmin Park, Youngjae Yu"
+  venue: "Under Review"
+  paper: https://arxiv.org/abs/2610.02089
+  project: https://snu-pi.github.io/HumanoidToolBench/
+  video: /assets/pubs/humanoidtoolbench.mp4
+
+- title: "Real-Time Execution with Autoregressive Policies"
+  authors: "Sangkyu Lee, Seohyeon Park, Tackgeun You, Avi Caciularu, Idan Szpektor, Hwasup Lim, Youngjae Yu"
+  venue: "Conference on Robot Learning (CoRL), 2026"
+  paper: https://arxiv.org/pdf/2606.13355
+  project: https://oddqueue.github.io/realfast/
+  video: /assets/pubs/realfast.mp4
+
+- title: "MV-TAP: Tracking Any Point in Multi-View Videos"
+  authors: "Jahyeok Koo*, Ines Hyeonsu Kim*, Mungyeom Kim, Junghyun Park, Seohyeon Park, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
+  paper: https://arxiv.org/pdf/2512.02006
+  project: https://cvlab-kaist.github.io/MV-TAP/
+  video: /assets/pubs/mvtap.mp4
+
+- title: "EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting"
+  authors: "MyoungGon Kim, JeongHyeon Ahn, Seohyeon Park, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han"
+  venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026"
+  paper: https://openaccess.thecvf.com/content/WACV2026/html/Kim_EllipssianNet_Image-guided_Sampling_of_2D_Gaussians_for_Gaussian_Splatting_WACV_2026_paper.html
+  code: https://github.com/medialab-ku/EllipssianNet
+  image: /assets/pubs/ellipssiannet.jpg
+
+- title: "Superpixel-guided Sampling for Compact 3D Gaussian Splatting"
+  authors: "MyoungGon Kim, SeungWon Jeong, Seohyeon Park, JungHyun Han"
+  venue: "ACM Symposium on Virtual Reality Software and Technology (VRST), 2024"
+  paper: https://dl.acm.org/doi/10.1145/3641825.3687719
+  code: https://github.com/medialab-ku/SuperpixelGuidedSamplingForCompact3DGaussianSplatting
+  image: /assets/pubs/superpixel.jpg

@@ -1,0 +1,140 @@
+---
+---
+
+@import "syntax-dark";
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
+  font-family: 'Lato', 'Noto Sans KR', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+a { color: #1772d0; text-decoration: none; }
+a:hover, a:focus { color: #f09228; }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* Header / footer — same feel as the homepage */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #eee;
+}
+.site-name { font-size: 22px; color: #222; }
+.site-header nav { font-size: 15px; }
+.site-footer {
+  margin-top: 56px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+  text-align: right;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Post list */
+.page-title { font-size: 30px; font-weight: normal; margin: 0 0 8px; }
+.year { font-size: 20px; font-weight: normal; margin: 32px 0 8px; color: #555; }
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { padding: 6px 0; }
+.date { color: #888; font-variant-numeric: tabular-nums; margin-right: 10px; }
+
+.tags { margin-left: 6px; }
+.tag {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+.tag:hover { color: #fff; background: #1772d0; }
+.tag-cloud { margin: 12px 0 0; }
+
+/* Post */
+.post-title { font-size: 30px; line-height: 1.35; margin: 0 0 8px; }
+.post-meta { color: #888; font-size: 14px; margin-bottom: 32px; }
+.post-meta time { margin-right: 10px; }
+
+.post-body h1, .post-body h2, .post-body h3, .post-body h4 { line-height: 1.4; margin: 2em 0 0.6em; }
+.post-body h1 { font-size: 26px; }
+.post-body h2 { font-size: 22px; }
+.post-body h3 { font-size: 19px; }
+.post-body h4 { font-size: 17px; }
+.post-body img, .post-body video { max-width: 100%; height: auto; display: block; margin: 1em auto; }
+.post-body blockquote { margin: 1em 0; padding: 0.2em 1em; color: #555; border-left: 3px solid #ddd; }
+.post-body hr { border: 0; border-top: 1px solid #eee; margin: 2em 0; }
+.post-body table { border-collapse: collapse; margin: 1em 0; display: block; overflow-x: auto; }
+.post-body th, .post-body td { border: 1px solid #e3e3e3; padding: 6px 10px; }
+.post-body th { background: #fafafa; }
+.post-body mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; }
+
+/* Code */
+code, pre { font-family: 'Fira Code', Consolas, Menlo, monospace; }
+:not(pre) > code {
+  font-size: 88%;
+  padding: 0.1em 0.35em;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+div.highlight {
+  background-color: #383b40;
+  color: #e6e6e6;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 2rem 0;
+  padding-top: 35px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56;
+    box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  }
+
+  pre { margin: 0; padding: 1rem 1.5rem; overflow-x: auto; background: transparent; }
+  // the syntax theme paints its own near-black background on tokens; let the gray show through
+  .highlight, .highlight .w, .highlight .err { background-color: transparent; }
+  code { font-size: 0.9rem; line-height: 1.6; }
+}
+
+/* Prev / next */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 15px;
+}
+.post-nav .next { text-align: right; }
+
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .page-title, .post-title { font-size: 25px; }
+  .post-list .tags { display: block; margin: 2px 0 0; }
+  .post-nav { flex-direction: column; }
+}

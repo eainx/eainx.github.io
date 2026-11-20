@@ -1,65 +1,46 @@
 ---
-layout: page
-title: About me
+layout: homepage
+title: Seohyeon Park
 permalink: /
+
+links:
+  - title: Email
+    url: mailto:seohyun423@snu.ac.kr
+  - title: GitHub
+    url: https://github.com/eainx
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/seohyeon-park-eainx/
+  - title: Blog
+    url: /blog/
+
+# news:
+#   - date: 2026.09
+#     text: "Paper accepted to CoRL 2026!"
+
+sections:
+  - title: Experience
+    items:
+      - name: PILAB, Seoul National University
+        role: MS-PhD Integrated Student
+        date: 2026.03 – present
+      - name: CVLAB, KAIST AI
+        role: Research Intern
+        date: 2025.03 – 2025.11
+      - name: Media Lab, Korea University
+        role: Research Intern
+        date: 2023.08 – 2025.03
+  - title: Education
+    items:
+      - name: Seoul National University
+        role: MS-PhD Integrated Program in Artificial Intelligence
+        date: 2026.03 – present
+      - name: Korea University
+        role: "B.S. in Architecture & Computer Science (GPA: 4.05 / 4.5)"
+        date: 2020 – 2026.02
 ---
-## Hi, there!
-I'm a first-year MS-PhD integrated student at [PILAB](https://pi.snu.ac.kr/) in [SNU IPAI](https://gsai.snu.ac.kr/).   
-When I was an undergraduate, I majored in Architecture and minored in Computer Science, fostering my appreciation for art and technology.   
-Currently, my research interests are robot learning, 3D vision, and simulation for enabling robots to understand and interact more naturally with real-world environments.
 
-***
+I'm a first-year MS-PhD student at [PILAB](https://pi.snu.ac.kr/), [SNU IPAI](https://gsai.snu.ac.kr/).
+I studied Architecture at Korea University with a minor in Computer Science, and I've been drawn to the space where design meets technology ever since.
 
-### Research Interests 
-Robot Learning, VLA, WAM, Robotics, 3D Vision, 3D Reconstruction
-
-***
-
-### Work Experience
-- **PILAB, SNU**  
-MS-PhD Integrated Student, 2026.03 ~
-- **CVLAB, KAIST AI**   
-Research Intern, 2025.03 ~ 2025.11
-- **Media Lab, KU**   
-Research Intern, 2023.08 ~ 2025.03
-
-***
-
-### Education
-- **Seoul National University**  
-MS-PhD Integrated Program in Artificial Intelligence, 2026.03 ~
-- **Korea University**   
-B.S. in Architecture & Computer Science, 2020 ~ 2026.02 (GPA: 4.05 / 4.5)
-
-***
-
-### Publications
-
-- **[HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution](https://arxiv.org/abs/2610.02089)** [🔗](https://snu-pi.github.io/HumanoidToolBench/)  
-Kyochul Jang, **Seohyeon Park**, Ohchul Kwon, Sangjun Park, Junhyeok Choi, Seungyeop Yi, Chaeyun Kim, Sangkyu Lee, Idan Szpektor, Avi Caciularu, Jongmin Park, Youngjae Yu   
-*Under Review*  
-
-- **[Real-Time Execution with Autoregressive Policies](https://arxiv.org/pdf/2606.13355)** [🔗](https://oddqueue.github.io/realfast/)  
-Sangkyu Lee, **Seohyeon Park**, Tackgeun You, Avi Caciularu, Idan Szpektor, Hwasup Lim, Youngjae Yu  
-*CoRL 2026*   
-
-- **[MV-TAP: Tracking Any Point in Multi-View Videos](https://arxiv.org/pdf/2512.02006)** [🔗](https://cvlab-kaist.github.io/MV-TAP/)  
-Jahyeok Koo\*, Ines Hyeonsu Kim\*, Mungyeom Kim, Junghyun Park, **Seohyeon Park**, Jaeyeong Kim, Jung Yi, Seokju Cho, Seungryong Kim  
-*CVPR 2026*   
-
-- **[EllipssianNet: Image-guided Sampling of 2D Gaussians for Gaussian Splatting](https://openaccess.thecvf.com/content/WACV2026/html/Kim_EllipssianNet_Image-guided_Sampling_of_2D_Gaussians_for_Gaussian_Splatting_WACV_2026_paper.html)**   
-MyoungGon Kim, JeongHyeon Ahn, **Seohyeon Park**, Hyemi Kim, Seunghyun Park, Jung Ho Hwang, JungHyun Han  
-*WACV 2026*   
-
-- **[Superpixel-guided Sampling for Compact 3D Gaussian Splatting](https://dl.acm.org/doi/10.1145/3641825.3687719)**  
-MyoungGon Kim, SeungWon Jeong, **Seohyeon Park**, JungHyun Han  
-*VRST 2024*    
-
-***
-
-### Languages
-&nbsp;&nbsp; **Korean:** native   
-&nbsp;&nbsp; **English:** fluent   
-&nbsp;&nbsp; **German:** basic   
-
-Feel free to contact me via [seohyun423@snu.ac.kr](mailto:seohyun423@snu.ac.kr)!
+I work on **robot learning**, mainly **VLA** and **world action models**, along with **3D vision** and **simulation**.
+These days I'm most excited about **dexterous manipulation** with multi-fingered hands, **humanoid whole-body control**, and **action representation**, i.e. how to represent robot actions so that one policy can work across different robots and still run smoothly in real time.

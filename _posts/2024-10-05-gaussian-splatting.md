@@ -80,7 +80,7 @@ date: 2024-10-05 01:00 +0900
     
     - where Σ is 3D covariance matrix (3x3), center point(mean). Multiplied by 𝛼 in blending process.
         
-        ![image.png](https://github.com/eainx/eainx.github.io/blob/master/_posts/3dgs/image.png?raw=true)
+        ![image.png](/assets/3dgs/image.png)
         
 - **공분산 행렬 (covariance matrix)의 표현**
     
@@ -107,7 +107,7 @@ date: 2024-10-05 01:00 +0900
     
     - 유도과정 ([https://xoft.tistory.com/49](https://xoft.tistory.com/49), [https://www.cs.umd.edu/~zwicker/publications/EWASplatting-TVCG02.pdf](https://www.cs.umd.edu/~zwicker/publications/EWASplatting-TVCG02.pdf) 참고)
         
-        ![image.png](https://github.com/eainx/eainx.github.io/blob/master/_posts/3dgs/image1.png?raw=true)
+        ![image.png](/assets/3dgs/image1.png)
         
         - camera space의 좌표 t를 ray space의 좌표 x로 변환하는 것은 비선형이다.
         - 비선형 변환을 선형 변환으로 만들기 위해 2차 테일러 다항식으로 근사한다.
@@ -151,7 +151,7 @@ date: 2024-10-05 01:00 +0900
 
 ### **Ⅲ. 최적화 (Optimization)**
 
-![image.png](https://github.com/eainx/eainx.github.io/blob/master/_posts/3dgs/image2.png?raw=true)
+![image.png](/assets/3dgs/image2.png)
 
 - **Gaussian parameters**
     - 위치 𝑝
@@ -174,7 +174,7 @@ date: 2024-10-05 01:00 +0900
     
 - **알고리즘**
     
-    ![image.png](https://github.com/eainx/eainx.github.io/blob/master/_posts/3dgs/image3.png?raw=true)
+    ![image.png](/assets/3dgs/image3.png)
     
     - **Densify**
         - 매 100 iteration마다 수행한다.
@@ -197,7 +197,7 @@ date: 2024-10-05 01:00 +0900
 - Tile-based 래스터라이저
 - **알고리즘**
     
-    ![image.png](https://github.com/eainx/eainx.github.io/blob/master/_posts/3dgs/image4.png?raw=true)
+    ![image.png](/assets/3dgs/image4.png)
     
     - 16x16 tiles로 화면을 분할함
     - view frustum 밖의 가우시안을 삭제함 (99%이상이 view frustum과 겹치는 경우만 살림)

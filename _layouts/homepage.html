@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.author.name }}</title>
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+</head>
+<body>
+  <main class="wrap">
+
+    <section class="intro">
+      <div class="intro-text">
+        <p class="name">{{ site.author.name }}</p>
+        {{ content }}
+        <p class="links">
+          {%- for l in page.links -%}
+            <a href="{{ l.url | relative_url }}">{{ l.title }}</a>{% unless forloop.last %} &nbsp;/&nbsp; {% endunless %}
+          {%- endfor -%}
+        </p>
+      </div>
+      <div class="intro-photo">
+        <img src="{{ site.avatar | relative_url }}" alt="profile photo">
+      </div>
+    </section>
+
+    {%- if page.news -%}
+    <h2>News</h2>
+    <ul class="news">
+      {%- for n in page.news -%}
+      <li><span class="date">{{ n.date }}</span> {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+
+    <h2>Publications</h2>
+    <p class="note">* equal contribution</p>
+    <table class="pubs"><tbody>
+      {%- for p in site.data.publications -%}
+      <tr>
+        {%- if p.video or p.image -%}
+        <td class="thumb">
+          {%- if p.video -%}
+            <video src="{{ p.video | relative_url }}" autoplay loop muted playsinline></video>
+          {%- else -%}
+            <img src="{{ p.image | relative_url }}" alt="">
+          {%- endif -%}
+        </td>
+        {%- endif -%}
+        <td class="info"{% unless p.video or p.image %} colspan="2"{% endunless %}>
+          <span class="papertitle">{{ p.title }}</span><br>
+          {{ p.authors | replace: site.author.name, '<strong>__ME__</strong>' | replace: '__ME__', site.author.name }}<br>
+          <em>{{ p.venue }}</em><br>
+          {%- assign sep = '' -%}
+          {%- if p.paper -%}<a href="{{ p.paper }}">paper</a>{%- assign sep = ' / ' -%}{%- endif -%}
+          {%- if p.project -%}{{ sep }}<a href="{{ p.project }}">project page</a>{%- assign sep = ' / ' -%}{%- endif -%}
+          {%- if p.code -%}{{ sep }}<a href="{{ p.code }}">code</a>{%- endif -%}
+          {%- if p.summary -%}<p>{{ p.summary }}</p>{%- endif -%}
+        </td>
+      </tr>
+      {%- endfor -%}
+    </tbody></table>
+
+    {%- for s in page.sections -%}
+    <h2>{{ s.title }}</h2>
+    <table class="items"><tbody>
+      {%- for it in s.items -%}
+      <tr>
+        <td class="item-main"><strong>{{ it.name }}</strong>{% if it.role %}<br>{{ it.role }}{% endif %}</td>
+        <td class="item-date">{{ it.date }}</td>
+      </tr>
+      {%- endfor -%}
+    </tbody></table>
+    {%- endfor -%}
+
+    <h2>Blog</h2>
+    <ul class="recent-posts">
+      {%- for post in site.posts limit: 5 -%}
+      <li><span class="date">{{ post.date | date: "%Y.%m.%d" }}</span> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+    <p><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>
+
+    <footer>
+      {%- if site.mapmyvisitors_id -%}
+      <div class="visitor-map">
+        <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d={{ site.mapmyvisitors_id }}"></script>
+      </div>
+      {%- endif -%}
+      <p class="credit">Website template inspired by <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
