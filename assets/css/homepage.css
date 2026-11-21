@@ -64,8 +64,14 @@ footer { margin-top: 48px; }
 
 @media (max-width: 640px) {
   .intro { flex-direction: column-reverse; gap: 12px; }
-  .intro-photo { flex-basis: auto; width: 220px; margin-top: 0; }
+  .intro-photo { flex-basis: auto; width: 150px; margin-top: 0; }
   .pubs tr, .pubs td { display: block; width: 100%; }
-  .pubs .thumb { padding: 0; }
+  .pubs .thumb { width: 100%; padding: 0 0 4px; } /* override desktop 28% */
+  .pubs .thumb img, .pubs .thumb video { aspect-ratio: auto; height: auto; } /* natural ratio, no blank bands */
   .pubs .thumb:empty { display: none; }
+  .pubs .info { padding-top: 4px; }
+
+  /* Experience / education: date drops under the name instead of squeezing it */
+  .items tr, .items td { display: block; }
+  .item-date { text-align: left; padding-left: 0; font-size: 13px; }
 }
